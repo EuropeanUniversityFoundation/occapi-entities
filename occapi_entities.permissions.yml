@@ -1,0 +1,29 @@
+administer course:
+  title: 'Administer course settings'
+  restrict access: true
+access course overview:
+  title: 'Access course overview page'
+  description: 'Should be combined with Access the Content overview page.'
+delete course:
+  title: Delete course
+create course:
+  title: Create course
+view course:
+  title: View course
+edit course:
+  title: Edit course
+
+administer programme:
+  title: 'Administer programme settings'
+  restrict access: true
+access programme overview:
+  title: 'Access programme overview page'
+  description: 'Should be combined with Access the Content overview page.'
+delete programme:
+  title: Delete programme
+create programme:
+  title: Create programme
+view programme:
+  title: View programme
+edit programme:
+  title: Edit programme

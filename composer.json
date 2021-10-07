@@ -1,0 +1,32 @@
+{
+  "name": "euf/occapi_entities",
+  "type": "drupal-module",
+  "description": "Drupal implementation of Open Course Catalogue API entities",
+  "keywords": [
+  ],
+  "homepage": "",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "",
+    "source": ""
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/EuropeanUniversityFoundation/ewp_core"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/EuropeanUniversityFoundation/ewp_institutions"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/EuropeanUniversityFoundation/ewp_ounits"
+    }
+  ],
+  "require": {
+    "euf/ewp_core": "^1.0@beta",
+    "euf/ewp_institutions": "^1.0@beta",
+    "euf/ewp_ounits": "^1.0@beta"
+  }
+}

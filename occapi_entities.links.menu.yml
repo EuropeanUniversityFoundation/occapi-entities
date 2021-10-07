@@ -1,0 +1,75 @@
+occapi_entities.admin:
+  title: 'OCCAPI entities'
+  route_name: occapi_entities.admin
+  description: 'Settings for OCCAPI entities'
+  parent: system.admin_structure
+
+entity.course.settings:
+  title: Course
+  description: Configure a Course entity type
+  route_name:  entity.course.settings
+  parent: occapi_entities.admin
+entity.course.add_form:
+  title: 'Add Course'
+  route_name: entity.course.add_form
+  description: 'Add a new Course entity'
+  parent: entity.course.settings
+  weight: -10
+entity.course.fields:
+  title: Manage fields
+  description: Manage the fields of the Course entity
+  route_name:  entity.course.field_ui_fields
+  parent: entity.course.settings
+  weight: 1
+entity.course.form:
+  title: Manage form display
+  description: Manage the form display of the Course entity
+  route_name:  entity.entity_form_display.course.default
+  parent: entity.course.settings
+  weight: 2
+entity.course.display:
+  title: Manage display
+  description: Manage the display of the Course entity
+  route_name:  entity.entity_view_display.course.default
+  parent: entity.course.settings
+  weight: 3
+entity.course.collection:
+  title: Courses
+  description: List of courses
+  route_name: entity.course.collection
+  parent: system.admin_content
+
+entity.programme.settings:
+  title: Programme
+  description: Configure a Programme entity type
+  route_name:  entity.programme.settings
+  parent: occapi_entities.admin
+entity.programme.add_form:
+  title: 'Add Programme'
+  route_name: entity.programme.add_form
+  description: 'Add a new Programme entity'
+  parent: entity.programme.settings
+  weight: -10
+entity.programme.fields:
+  title: Manage fields
+  description: Manage the fields of the Programme entity
+  route_name:  entity.programme.field_ui_fields
+  parent: entity.programme.settings
+  weight: 1
+entity.programme.form:
+  title: Manage form display
+  description: Manage the form display of the Programme entity
+  route_name:  entity.entity_form_display.programme.default
+  parent: entity.programme.settings
+  weight: 2
+entity.programme.display:
+  title: Manage display
+  description: Manage the display of the Programme entity
+  route_name:  entity.entity_view_display.programme.default
+  parent: entity.programme.settings
+  weight: 3
+entity.programme.collection:
+  title: Programmes
+  description: List of programmes
+  route_name: entity.programme.collection
+  parent: system.admin_content

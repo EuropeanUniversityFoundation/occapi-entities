@@ -1,0 +1,13 @@
+course.add_form:
+  route_name: entity.course.add_form
+  title: 'Add course'
+  appears_on:
+    - entity.course.collection
+    - entity.course.settings
+
+programme.add_form:
+  route_name: entity.programme.add_form
+  title: 'Add programme'
+  appears_on:
+    - entity.programme.collection
+    - entity.programme.settings
