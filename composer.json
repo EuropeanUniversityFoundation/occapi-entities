@@ -12,6 +12,10 @@
   },
   "repositories": [
     {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    },
+    {
       "type": "vcs",
       "url": "https://github.com/EuropeanUniversityFoundation/ewp_core"
     },
@@ -37,6 +41,7 @@
     "euf/ewp_institutions": "^1.0@beta",
     "euf/ewp_ounits": "^1.0@beta",
     "euf/isced_code": "^1.0@beta",
-    "euf/erasmus_subject_area_code": "^1.0@beta"
+    "euf/erasmus_subject_area_code": "^1.0@beta",
+    "drupal/languagefield": "^1.7"
   }
 }
