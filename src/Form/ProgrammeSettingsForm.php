@@ -23,17 +23,17 @@ class ProgrammeSettingsForm extends FormBase {
   public function buildForm(array $form, FormStateInterface $form_state) {
 
     $form['settings'] = [
-      '#markup' => $this->t('Settings form for a programme entity type.'),
+      '#markup' => $this->t('There are no settings for the programme entity type.'),
     ];
 
-    $form['actions'] = [
-      '#type' => 'actions',
-    ];
-
-    $form['actions']['submit'] = [
-      '#type' => 'submit',
-      '#value' => $this->t('Save'),
-    ];
+    // $form['actions'] = [
+    //   '#type' => 'actions',
+    // ];
+    //
+    // $form['actions']['submit'] = [
+    //   '#type' => 'submit',
+    //   '#value' => $this->t('Save'),
+    // ];
 
     return $form;
   }
