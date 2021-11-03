@@ -5,13 +5,13 @@ access course overview:
   title: 'Access course overview page'
   description: 'Should be combined with Access the Content overview page.'
 delete course:
-  title: Delete course
+  title: 'Delete course'
 create course:
-  title: Create course
+  title: 'Create course'
 view course:
-  title: View course
+  title: 'View course'
 edit course:
-  title: Edit course
+  title: 'Edit course'
 
 administer programme:
   title: 'Administer programme settings'
@@ -20,10 +20,10 @@ access programme overview:
   title: 'Access programme overview page'
   description: 'Should be combined with Access the Content overview page.'
 delete programme:
-  title: Delete programme
+  title: 'Delete programme'
 create programme:
-  title: Create programme
+  title: 'Create programme'
 view programme:
-  title: View programme
+  title: 'View programme'
 edit programme:
-  title: Edit programme
+  title: 'Edit programme'
