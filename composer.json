@@ -22,11 +22,21 @@
     {
       "type": "vcs",
       "url": "https://github.com/EuropeanUniversityFoundation/ewp_ounits"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/EuropeanUniversityFoundation/isced_code"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/EuropeanUniversityFoundation/erasmus_subject_area_code"
     }
   ],
   "require": {
     "euf/ewp_core": "^1.0@beta",
     "euf/ewp_institutions": "^1.0@beta",
-    "euf/ewp_ounits": "^1.0@beta"
+    "euf/ewp_ounits": "^1.0@beta",
+    "euf/isced_code": "^1.0@beta",
+    "euf/erasmus_subject_area_code": "^1.0@beta"
   }
 }
