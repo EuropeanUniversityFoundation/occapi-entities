@@ -109,16 +109,6 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: content
-  status:
-    type: boolean
-    label: above
-    weight: 12
-    settings:
-      format: enabled-disabled
-      format_custom_false: ''
-      format_custom_true: ''
-    region: content
-    third_party_settings: {  }
   title:
     weight: 9
     label: above
@@ -133,4 +123,5 @@ content:
     third_party_settings: {  }
     type: ewp_http_lang_default
     region: content
-hidden: {  }
+hidden:
+  status: true
