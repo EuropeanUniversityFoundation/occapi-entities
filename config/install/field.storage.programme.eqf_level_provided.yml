@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - ewp_core
+    - occapi_entities
+  enforced:
+    module:
+      - occapi_entities
+id: programme.eqf_level_provided
+field_name: eqf_level_provided
+entity_type: programme
+type: eqf_level
+settings: {  }
+module: ewp_core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

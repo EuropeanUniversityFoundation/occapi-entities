@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - ewp_institutions
+    - occapi_entities
+  enforced:
+    module:
+      - occapi_entities
+id: programme.hei
+field_name: hei
+entity_type: programme
+type: entity_reference
+settings:
+  target_type: hei
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

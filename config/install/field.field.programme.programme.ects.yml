@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.programme.ects
+  module:
+    - occapi_entities
+  enforced:
+    module:
+      - occapi_entities
+id: programme.programme.ects
+field_name: ects
+entity_type: programme
+bundle: programme
+label: ECTS
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

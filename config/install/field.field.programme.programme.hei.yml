@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.programme.hei
+  module:
+    - occapi_entities
+  enforced:
+    module:
+      - occapi_entities
+id: programme.programme.hei
+field_name: hei
+entity_type: programme
+bundle: programme
+label: Institution
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:hei'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+field_type: entity_reference

@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.programme.language_of_instruction
+  module:
+    - languagefield
+    - occapi_entities
+  enforced:
+    module:
+      - occapi_entities
+id: programme.programme.language_of_instruction
+field_name: language_of_instruction
+entity_type: programme
+bundle: programme
+label: 'Language of instruction'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: language_field

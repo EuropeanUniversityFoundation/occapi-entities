@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.programme.url
+  module:
+    - ewp_core
+    - occapi_entities
+  enforced:
+    module:
+      - occapi_entities
+id: programme.programme.url
+field_name: url
+entity_type: programme
+bundle: programme
+label: URL
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: ewp_http_lang

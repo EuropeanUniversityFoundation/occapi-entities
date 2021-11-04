@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.programme.isced_code
+  module:
+    - isced_code
+    - occapi_entities
+  enforced:
+    module:
+      - occapi_entities
+id: programme.programme.isced_code
+field_name: isced_code
+entity_type: programme
+bundle: programme
+label: 'ISCED code'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: isced_code

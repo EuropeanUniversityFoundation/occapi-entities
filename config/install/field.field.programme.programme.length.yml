@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.programme.length
+  module:
+    - occapi_entities
+  enforced:
+    module:
+      - occapi_entities
+id: programme.programme.length
+field_name: length
+entity_type: programme
+bundle: programme
+label: Length
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer
