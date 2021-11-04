@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.course.ects
+  module:
+    - occapi_entities
+  enforced:
+    module:
+      - occapi_entities
+id: course.course.ects
+field_name: ects
+entity_type: course
+bundle: course
+label: ECTS
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: -0.5
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

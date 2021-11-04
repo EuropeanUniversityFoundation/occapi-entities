@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.course.learning_outcomes
+  module:
+    - ewp_core
+    - occapi_entities
+  enforced:
+    module:
+      - occapi_entities
+id: course.course.learning_outcomes
+field_name: learning_outcomes
+entity_type: course
+bundle: course
+label: 'Learning outcomes'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: ewp_multiline_lang

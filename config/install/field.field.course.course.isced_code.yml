@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.course.isced_code
+  module:
+    - isced_code
+    - occapi_entities
+  enforced:
+    module:
+      - occapi_entities
+id: course.course.isced_code
+field_name: isced_code
+entity_type: course
+bundle: course
+label: 'ISCED code'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: isced_code

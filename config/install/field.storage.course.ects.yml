@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - occapi_entities
+  enforced:
+    module:
+      - occapi_entities
+id: course.ects
+field_name: ects
+entity_type: course
+type: decimal
+settings:
+  precision: 10
+  scale: 1
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

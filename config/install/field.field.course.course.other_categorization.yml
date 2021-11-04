@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.course.other_categorization
+  module:
+    - occapi_entities
+  enforced:
+    module:
+      - occapi_entities
+id: course.course.other_categorization
+field_name: other_categorization
+entity_type: course
+bundle: course
+label: 'Other categorization'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

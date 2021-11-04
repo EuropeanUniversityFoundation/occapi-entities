@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - ewp_core
+    - occapi_entities
+  enforced:
+    module:
+      - occapi_entities
+id: course.learning_outcomes
+field_name: learning_outcomes
+entity_type: course
+type: ewp_multiline_lang
+settings: {  }
+module: ewp_core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

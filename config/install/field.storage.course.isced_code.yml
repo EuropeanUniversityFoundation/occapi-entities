@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - isced_code
+    - occapi_entities
+  enforced:
+    module:
+      - occapi_entities
+id: course.isced_code
+field_name: isced_code
+entity_type: course
+type: isced_code
+settings: {  }
+module: isced_code
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

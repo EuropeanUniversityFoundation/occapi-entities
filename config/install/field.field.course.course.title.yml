@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.course.title
+  module:
+    - ewp_core
+    - occapi_entities
+  enforced:
+    module:
+      - occapi_entities
+id: course.course.title
+field_name: title
+entity_type: course
+bundle: course
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: ewp_string_lang
