@@ -67,6 +67,7 @@ class ProgrammeListBuilder extends EntityListBuilder {
 
     $total = $this->getStorage()
       ->getQuery()
+      ->accessCheck(TRUE)
       ->count()
       ->execute();
 

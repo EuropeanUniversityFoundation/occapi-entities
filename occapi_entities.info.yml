@@ -2,7 +2,7 @@ name: OCCAPI entities
 type: module
 description: 'Provides entities to store OCCAPI data.'
 package: OCCAPI
-core_version_requirement: ^8 || ^9
+core_version_requirement: ^8 || ^9 || ^10
 dependencies:
   - ewp_core:ewp_core
   - ewp_institutions:ewp_institutions

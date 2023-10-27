@@ -4,11 +4,30 @@ namespace Drupal\occapi_entities\Form;
 
 use Drupal\Core\Entity\ContentEntityForm;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Render\RendererInterface;
+use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
  * Form controller for the course entity edit forms.
  */
 class CourseForm extends ContentEntityForm {
+
+  /**
+   * The renderer service.
+   *
+   * @var \Drupal\Core\Render\RendererInterface
+   */
+  protected $renderer;
+
+  /**
+   * {@inheritdoc}
+   */
+  public static function create(ContainerInterface $container) {
+    // Instantiates this form class.
+    $instance = parent::create($container);
+    $instance->renderer = $container->get('renderer');
+    return $instance;
+  }
 
   /**
    * {@inheritdoc}
@@ -20,7 +39,7 @@ class CourseForm extends ContentEntityForm {
     $link = $entity->toLink($this->t('View'))->toRenderable();
 
     $message_arguments = ['%label' => $this->entity->label()];
-    $logger_arguments = $message_arguments + ['link' => render($link)];
+    $logger_arguments = $message_arguments + ['link' => $this->renderer->render($link)];
 
     if ($result == SAVED_NEW) {
       $this->messenger()->addStatus($this->t('New course %label has been created.', $message_arguments));
