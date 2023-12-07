@@ -1,47 +1,45 @@
 {
-  "name": "euf/occapi_entities",
-  "type": "drupal-module",
-  "description": "Drupal implementation of Open Course Catalogue API entities",
-  "keywords": [
-  ],
-  "homepage": "",
-  "minimum-stability": "dev",
-  "support": {
-    "issues": "",
-    "source": ""
-  },
-  "repositories": [
-    {
-      "type": "composer",
-      "url": "https://packages.drupal.org/8"
+    "name": "euf/occapi_entities",
+    "type": "drupal-module",
+    "description": "Implements Open Course Catalogue API Courses and Programmes as content entity types.",
+    "keywords": [
+        "Drupal",
+        "Entity type",
+        "OCCAPI"
+    ],
+    "homepage": "https://github.com/EuropeanUniversityFoundation/occapi_entities",
+    "support": {
+        "issues": "https://github.com/EuropeanUniversityFoundation/occapi_entities/issues",
+        "source": "https://github.com/EuropeanUniversityFoundation/occapi_entities"
     },
-    {
-      "type": "vcs",
-      "url": "https://github.com/EuropeanUniversityFoundation/ewp_core"
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Tiago Simões",
+            "email": "tiago.simoes@uni-foundation.eu",
+            "role": "Maintainer"
+        }
+    ],
+    "suggest": {
+        "euf/occapi_client": "Implements an Open Course Catalogue API client."
     },
-    {
-      "type": "vcs",
-      "url": "https://github.com/EuropeanUniversityFoundation/ewp_institutions"
+    "require": {
+        "drupal/languagefield": "^1.9",
+        "euf/erasmus_subject_area_code": "^1.0@beta",
+        "euf/ewp_core": "^1.0@beta",
+        "euf/ewp_institutions": "^1.0@beta",
+        "euf/ewp_ounits": "^1.0@beta",
+        "euf/isced_code": "^1.0@beta"
     },
-    {
-      "type": "vcs",
-      "url": "https://github.com/EuropeanUniversityFoundation/ewp_ounits"
-    },
-    {
-      "type": "vcs",
-      "url": "https://github.com/EuropeanUniversityFoundation/isced_code"
-    },
-    {
-      "type": "vcs",
-      "url": "https://github.com/EuropeanUniversityFoundation/erasmus_subject_area_code"
-    }
-  ],
-  "require": {
-    "euf/ewp_core": "^1.0@beta",
-    "euf/ewp_institutions": "^1.0@beta",
-    "euf/ewp_ounits": "^1.0@beta",
-    "euf/isced_code": "^1.0@beta",
-    "euf/erasmus_subject_area_code": "^1.0@beta",
-    "drupal/languagefield": "^1.7"
-  }
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+          "type": "composer",
+          "url": "https://packages.uni-foundation.eu"
+        },
+        {
+          "type": "composer",
+          "url": "https://packages.drupal.org/8"
+        }
+    ]
 }
